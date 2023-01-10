@@ -1,0 +1,6 @@
+---
+const { id } = Astro.params;
+import Card from '../../components/Card.astro';
+---
+<h1>hola: {id}</h1>
+{id === 'pepe' ? <Card title="pepe" href="#" body="body"/> : 'no es param pepe' }
